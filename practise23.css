@@ -3,7 +3,7 @@ body{font-family:work sans;font-size: 16px;}
 h1,h2,h3,h4,h5,h6{
     font-family: oswald;font-weight: 500;
 }
-.container{margin: auto;width: 1140px;padding:0px 0px}
+.container{margin: auto;width: 892px;padding:0px 0px}
 
 
 
@@ -14,7 +14,6 @@ h1,h2,h3,h4,h5,h6{
     border-right: 1px solid #dedede;
     border-left: 1px solid #dedede;
     color: #414141;
-    margin-left: 116px;
 }
 
 .phone i {
@@ -24,7 +23,7 @@ h1,h2,h3,h4,h5,h6{
 
 .email {
     display: inline-block;
-    width: 500px;
+    width: 496px;
     padding: 14px;
     border-right: 1px solid lightgrey;
     color: #232323;
@@ -47,3 +46,4 @@ h1,h2,h3,h4,h5,h6{
 .social i:hover {
     color: #ff5200;transition:0.3s
 }
+.backgroundimage{background:url(slide-1.jpg)}
