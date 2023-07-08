@@ -3,10 +3,7 @@ body{font-family:work sans;font-size: 16px;}
 h1,h2,h3,h4,h5,h6{
     font-family: oswald;font-weight: 500;
 }
-.container{margin: auto;width: 892px;padding:0px 0px}
-
-
-
+.container{margin: auto;width: 892px;padding:0px 0px;overflow: hidden;}
 .phone {
     display: inline-block;
     float: left;
@@ -36,11 +33,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .social i {
-    padding: 13px;
+    padding: 14px 13px;
     font-size: 22px;
     border-right: 1px solid lightgrey;
-    margin-right: -5px;
     color: #00000091;
+    margin-right: -7px;
 }
 
 .social i:hover {
@@ -48,3 +45,18 @@ h1,h2,h3,h4,h5,h6{
 }
 .backgroundimage{background:url(slide-1.jpg)}
 .projectnumber{background:url(customerNum.jpg);}
+.logo {padding: 5px;width: 357px;display: inline-block;}
+.bar ul li {display: inline-block;float: left;width: 71px;padding: 9px 2px;font-size: 13px;font-family: 'Oswald';font-weight: 450;letter-spacing: 1px;}
+.bar {float: right;width: 525px;}
+.bar ul li a {
+    color: #101010;
+    text-decoration: none;
+}
+.btntop li {
+    width: 20px;
+}
+
+i.fas.fa-search {
+    width: 19px;
+    font-size: 21px;
+}
