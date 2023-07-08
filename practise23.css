@@ -3,7 +3,7 @@ body{font-family:work sans;font-size: 16px;}
 h1,h2,h3,h4,h5,h6{
     font-family: oswald;font-weight: 500;
 }
-.container{margin: auto;width: 892px;padding:0px 0px;overflow: hidden;}
+.container{margin: auto;width: 892px;padding:0px 0px;}
 .phone {
     display: inline-block;
     float: left;
@@ -26,13 +26,11 @@ h1,h2,h3,h4,h5,h6{
     color: #232323;
 }
 
-.email i {padding-right: 13px;color: #ff5200;font-size: 21px;}
+.email i{padding-right: 13px;color: #ff5200;font-size: 21px;}
 
-.social {
+.social{
     display: inline-block;
-    margin-left: -2px;
-}
-
+    margin-left: -2px;}
 .social i {
     padding: 12px;
     font-size: 22px;
@@ -46,30 +44,80 @@ h1,h2,h3,h4,h5,h6{
 }
 .backgroundimage{background:url(slide-1.jpg)}
 .projectnumber{background:url(customerNum.jpg);}
-.logo {padding: 5px;width: 268px;float: left;display: block;}
-.bar ul li {display: flex;float: left;width: 3px;padding: 10px 38px;font-size: 13px;font-family: 'Oswald';font-weight: 450;letter-spacing: 1px;}
-.bar {float: right;width: 600px;margin-right: -43px;padding: 14px 0px;}
-.bar ul li a {
-    color: #101010;
+.logo {
+    float: left;
+    width: 367px;
+}
+
+.menu {
+    float: left;
+    width: 525px;
+}
+
+ul.mainmenuitem li {
+    float: left;
+    list-style: none;
+    font-family: oswald;
+    padding: 14px 6.25px;
+    text-transform: uppercase;
+    color: #242424;
+}
+
+ul.mainmenuitem a {
     text-decoration: none;
-    padding-right: 4px;
-    margin-top: -4px;
+    color: black;
+    font-weight: 450;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+}ul.mainmenuitem li a {
+    margin-right: 5px;
 }
-i.fas.fa-search {
-    font-size: 21px;
-}
-ul.barbottom li {width: 266px;margin-left: 22px;}
 
-ul.barbottom li:before {
-    border: 13px solid red;
-    width: 10px;
-    height: 9px;}
-ul.barbottom li:nth-child(1) {
-    margin-top: 30px;
+ul.mainmenuitem li i {
+    font-size: 23px;
+}
+
+ul.mainmenuitem li svg {
+    font-size: 14px;
+}
+/*<ul class="submenu">
+                        <li>Home1</li>
+                        <li>Home2</li>
+                      </ul>*/
+                      section.logobar {height: 54px;}
+
+.primarywrapper {
+    display: table;
+    overflow: hidden;
+}ul.submenu {
+    width: 260px;
+    position: absolute;
+    background: white;
     border-top: 1px solid transparent;
-    width: 207px;
+    border: 1px solid #efefef;
+    margin-top: 17.5px;
+    padding: 20px 20px 20px 26px;
 }
 
-.bar ul li a i {
-    padding: 0px 3px;
-}   
+ul.submenu li {
+    font-family: arial;
+    font-size: 13.5px;
+    padding: 11px;
+    width: 213px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #2c2c2c;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+ul.submenu li:before {
+    display: inline-block;
+    height: 2.5px;
+    width: 23px;
+    background: #ff5200;
+    position: relative;border-radius:4px;margin-right:10px;vertical-align:middle;
+}
+ul.submenu li:before {
+    content: "";
+}
