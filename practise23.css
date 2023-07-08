@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
 
 .email {
     display: inline-block;
-    width: 496px;
+    width: 488px;
     padding: 14px;
     border-right: 1px solid lightgrey;
     color: #232323;
@@ -30,14 +30,15 @@ h1,h2,h3,h4,h5,h6{
 
 .social {
     display: inline-block;
+    margin-left: -2px;
 }
 
 .social i {
-    padding: 14px 13px;
+    padding: 12px;
     font-size: 22px;
     border-right: 1px solid lightgrey;
-    color: #00000091;
-    margin-right: -7px;
+    margin-right: -4.5px;
+    color: #000000d1;
 }
 
 .social i:hover {
@@ -45,18 +46,30 @@ h1,h2,h3,h4,h5,h6{
 }
 .backgroundimage{background:url(slide-1.jpg)}
 .projectnumber{background:url(customerNum.jpg);}
-.logo {padding: 5px;width: 357px;display: inline-block;}
-.bar ul li {display: inline-block;float: left;width: 71px;padding: 9px 2px;font-size: 13px;font-family: 'Oswald';font-weight: 450;letter-spacing: 1px;}
-.bar {float: right;width: 525px;}
+.logo {padding: 5px;width: 268px;float: left;display: block;}
+.bar ul li {display: flex;float: left;width: 3px;padding: 10px 38px;font-size: 13px;font-family: 'Oswald';font-weight: 450;letter-spacing: 1px;}
+.bar {float: right;width: 600px;margin-right: -43px;padding: 14px 0px;}
 .bar ul li a {
     color: #101010;
     text-decoration: none;
+    padding-right: 4px;
+    margin-top: -4px;
 }
-.btntop li {
-    width: 20px;
-}
-
 i.fas.fa-search {
-    width: 19px;
     font-size: 21px;
 }
+ul.barbottom li {width: 266px;margin-left: 22px;}
+
+ul.barbottom li:before {
+    border: 13px solid red;
+    width: 10px;
+    height: 9px;}
+ul.barbottom li:nth-child(1) {
+    margin-top: 30px;
+    border-top: 1px solid transparent;
+    width: 207px;
+}
+
+.bar ul li a i {
+    padding: 0px 3px;
+}   
