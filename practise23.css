@@ -3,7 +3,7 @@ body{font-family:work sans;font-size: 16px;}
 h1,h2,h3,h4,h5,h6{
     font-family: oswald;font-weight: 500;
 }
-.container{margin: auto;width: 892px;padding:0px 0px;}
+.container{margin: auto;width: 892px;padding:0px 0px;overflow: hidden;}
 .phone {
     display: inline-block;
     float: left;
@@ -42,27 +42,21 @@ h1,h2,h3,h4,h5,h6{
 .social i:hover {
     color: #ff5200;transition:0.3s
 }
-.backgroundimage{background:url(slide-1.jpg)}
+.backgroundimage{background:url(slide-1.jpg);background-repeat: no-repeat;height: 500px;background-size: contain;background-position: center;}
 .projectnumber{background:url(customerNum.jpg);}
 .logo {
     float: left;
-    width: 367px;
-}
-
+    width: 367px;}
 .menu {
     float: left;
-    width: 525px;
-}
-
+    width: 525px;}
 ul.mainmenuitem li {
     float: left;
     list-style: none;
     font-family: oswald;
     padding: 14px 6.25px;
     text-transform: uppercase;
-    color: #242424;
-}
-
+    color: #242424;}
 ul.mainmenuitem a {
     text-decoration: none;
     color: black;
@@ -70,35 +64,29 @@ ul.mainmenuitem a {
     font-size: 14px;
     letter-spacing: 0.07em;
 }ul.mainmenuitem li a {
-    margin-right: 5px;
-}
-
+    margin-right: 5px;}
 ul.mainmenuitem li i {
-    font-size: 23px;
-}
-
+    font-size: 23px;}
 ul.mainmenuitem li svg {
-    font-size: 14px;
-}
-/*<ul class="submenu">
-                        <li>Home1</li>
-                        <li>Home2</li>
-                      </ul>*/
-                      section.logobar {height: 54px;}
+    font-size: 14px;}
+section.logobar {height: 54px;}
 
 .primarywrapper {
     display: table;
-    overflow: hidden;
-}ul.submenu {
+    overflow: hidden;}
+ul.submenu {
+    transform: scaleY(0);
+    transform-origin: top;
+    visibility: hidden;
+    transition: 0.5s;
     width: 260px;
     position: absolute;
     background: white;
     border-top: 1px solid transparent;
-    border: 1px solid #efefef;
+    border: 1px solid #f1f1f1;
     margin-top: 17.5px;
     padding: 20px 20px 20px 26px;
-}
-
+    }
 ul.submenu li {
     font-family: arial;
     font-size: 13.5px;
@@ -111,13 +99,85 @@ ul.submenu li {
     position: relative;
 }
 
-ul.submenu li:before {
+ul.submenu li a:before {
     display: inline-block;
     height: 2.5px;
-    width: 23px;
     background: #ff5200;
-    position: relative;border-radius:4px;margin-right:10px;vertical-align:middle;
-}
-ul.submenu li:before {
+    position: relative;
+    border-radius:4px;
+    margin-right:10px;
+    vertical-align:middle;
     content: "";
+    transition:.6s;
+    width: 0px;
+    }
+
+ul.mainmenuitem li ul.submenu li:hover a:before {
+    width: 20px;
 }
+ul.mainmenuitem li ul.submenu li a:before {
+}
+ul.mainmenuitem li:hover ul.submenu {
+    transform: scaleY(1);visibility: visible;
+}
+ul.submenu li a {font-weight: 700;color: #2d2d2d;}
+
+.backgroundtext h2 {
+    color: white;
+    width: 451px;
+    font-size: 39px;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    font-weight: 500;
+    padding-top: 110px;
+}
+
+.backgroundtext p {
+    color: white;
+    width: 400px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+
+.backgroundtext button a {
+    color: white;
+    border: none;
+    background: #ff5200;
+    text-decoration: none;
+    padding: 10px 35px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    letter-spacing: 0.03em;
+    word-spacing: 0.1em;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.backgroundtext button {
+    border: none;
+}
+
+ .circle{margin-top: 51px;margin-left: 434px;}
+
+.circle span{
+    height: 1px;
+    width: 1px;
+    background: transparent;
+    border: 3.5px solid #ff5200;
+    border-radius: 51px;
+    text-align: center;
+    display: block;
+    padding: 4px;
+    float: left;
+    margin-right: 5px;
+}
+
+#Homeslider{background:url(slide-1.jpg);}
+.circle span:last-child {background: #ff5200;}
+.backgroundtext button a:hover {
+    background: #575757;
+}`
